@@ -1,74 +1,87 @@
-# Getting Started with Create React App
+# jubin-david.github.io
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio website built with **React** (Create React App) and **Tailwind CSS**, deployed to **GitHub Pages**.
 
-## Available Scripts
+- **Live site**: `https://jubin-david.github.io`
 
-In the project directory, you can run:
+## What’s inside
 
-### `npm start`
+- **Landing/Banner**: intro + hero content (`src/components/banner/`)
+- **Features**: highlight areas of work/strengths (`src/components/features/`)
+- **Projects**: portfolio projects (`src/components/projects/`)
+- **Resume**: experience, skills, education, achievements (`src/components/resume/`)
+- **Testimonials**: testimonials slider (`src/components/tesimonial/`)
+- **Contact**: contact section (`src/components/contact/`)
+- **Layout**: navbar + footer (`src/components/navbar/`, `src/components/footer/`)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React 18** + **Create React App** (`react-scripts`)
+- **Tailwind CSS**
+- **React Router** (`react-router-dom`)
+- **Framer Motion** (animations)
+- **react-slick / slick-carousel** (carousel)
+- **gh-pages** (deployment)
 
-### `npm test`
+## Getting started (local development)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js + npm
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-### `npm run deploy`
+### Run locally
 
-Your app is deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then open `http://localhost:3000`.
 
-### `npm run eject`
+## Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **`npm start`**: run dev server
+- **`npm run build`**: create production build in `build/`
+- **`npm test`**: run tests in watch mode
+- **`npm run deploy`**: build + publish to GitHub Pages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deploying to GitHub Pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This repo uses the `gh-pages` package. Deployment is configured via:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `homepage` in `package.json` (currently `https://jubin-david.github.io`)
+- `predeploy`: runs the production build
+- `deploy`: publishes the `build/` directory
 
-## Learn More
+To deploy:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run deploy
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project structure (high level)
 
-### Code Splitting
+```text
+src/
+  components/        UI sections (banner, features, projects, resume, contact, etc.)
+  constants/         Shared data/constants used by the UI
+  assets/            Images/icons exports
+  App.js             Top-level app composition
+  index.js           React entry point
+  index.css          Global styles (Tailwind entry)
+public/              Static assets
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Updating content
 
-### Analyzing the Bundle Size
+- **Text/content**: typically lives in `src/constants/` and section components under `src/components/`
+- **Images**: add to `src/assets/` or `public/` (depending on how you reference them)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All rights reserved (personal site). If you want to reuse parts, open an issue first.

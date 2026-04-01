@@ -41,7 +41,7 @@ const LeftBanner = () => {
             />
           </h2>
           <p className="text-base font-bodyFont leading-6 tracking-wide">
-          A highly experienced Python developer with 5 years of experience in developing and maintaining
+          A highly experienced Software Engineer with 7+ years of experience in developing and maintaining
   complex software systems. Skilled in a variety of web frameworks, including Flask, Fast API, and
   Django. Proficient in relational and non-relational database management systems and adept at
   front-end technologies such as React, CSS, HTML, and JavaScript. I am skilled in utilizing AWS
